@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shingo Tamaki - Senior iOS Developer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+        .hero h2 {
+            font-size: 1.5rem;
+            margin: 0 0 20px 0;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+        .hero .links {
+            margin-top: 30px;
+        }
+        .hero .links a {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        .hero .links a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .skill-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        .skill-card h3 {
+            color: #007AFF;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        .skill-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-card li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .skill-card li:last-child {
+            border-bottom: none;
+        }
+        .experience {
+            background: white;
+        }
+        .experience-item {
+            background: #f8f9fa;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #007AFF;
+        }
+        .experience-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .experience-item .period {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .contact {
+            background: linear-gradient(135deg, #5856D6, #007AFF);
+            color: white;
+            text-align: center;
+        }
+        .contact h2 {
+            color: white;
+        }
+        .contact .links a {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px 30px;
+            margin: 0 15px;
+            text-decoration: none;
+            border-radius: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        .contact .links a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Shingo Tamaki</h1>
+            <h2>Senior iOS Developer</h2>
+            <p>Freelance Senior iOS Developer with over 10 years of experience in iOS app development. Specializes in Swift, SwiftUI, and native Apple ecosystem technologies.</p>
+            <div class="links">
+                <a href="https://twitter.com/alligator_tama" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/in/信悟-玉城-656a1350/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Tech Stack & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>• Pro: Swift / Objective-C</li>
+                        <li>• Intermediate: Dart, Kotlin, Python, JavaScript, Ruby</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>iOS Development</h3>
+                    <ul>
+                        <li>• SwiftUI / UIKit / Combine / Core Data</li>
+                        <li>• Architecture: MVVM, VIPER, Clean Architecture</li>
+                        <li>• Testing: XCTest, UI Testing</li>
+                        <li>• CI/CD: Bitrise, GitHub Actions, CircleCI</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Cross Platform</h3>
+                    <ul>
+                        <li>• Flutter / Dart</li>
+                        <li>• React Native / JavaScript</li>
+                        <li>• Xamarin / C#</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Services</h3>
+                    <ul>
+                        <li>• Xcode / Android Studio / VS Code</li>
+                        <li>• Git / GitHub / GitLab</li>
+                        <li>• Firebase / AWS / Google Cloud</li>
+                        <li>• Figma / Sketch</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <h3>Senior iOS Developer</h3>
+                <div class="period">2015 - Present</div>
+                <p>Freelance iOS development focusing on Swift, SwiftUI, and modern iOS technologies. Delivered multiple successful apps for various clients.</p>
+            </div>
+            <div class="experience-item">
+                <h3>iOS Developer</h3>
+                <div class="period">2013 - 2015</div>
+                <p>Developed iOS applications using Objective-C and early Swift. Gained experience in UIKit, Core Data, and iOS system frameworks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>Interested in working together? Feel free to reach out!</p>
+            <div class="links">
+                <a href="https://twitter.com/alligator_tama" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/in/信悟-玉城-656a1350/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
