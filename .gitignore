@@ -1,0 +1,8 @@
+# Signing material for the Wallet pass. Never commit these: this repo is public.
+certs/
+*.p12
+*.pem
+*.key
+*.cer
+*.csr
+.DS_Store
