@@ -48,7 +48,9 @@ Safari only offers to add the pass when it's served with this content type.
 
 ## Notes
 
-- The pass is static. There's no `webServiceURL`, so installed passes don't auto-update. To push
-  changes, bump `serialNumber` and rebuild. Visitors who re-add the pass get the new version.
+- The pass is static. There's no `webServiceURL`, so installed passes don't auto-update. Wallet
+  identifies a pass by `passTypeIdentifier` + `serialNumber`, so keep `serialNumber` unchanged when
+  you edit the content. A visitor who adds the rebuilt pass then replaces their old copy instead of
+  getting a second card. Change the serial only for a deliberately separate card.
 - The Pass Type ID certificate expires after about a year. Passes that are already installed keep
   working, but new builds need a renewed certificate.
