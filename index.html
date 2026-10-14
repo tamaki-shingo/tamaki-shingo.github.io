@@ -143,6 +143,38 @@
             background: rgba(255, 255, 255, 0.3);
             transform: translateY(-3px);
         }
+        .save-card {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+        }
+        .save-card .wallet-badge {
+            display: none;
+            line-height: 0;
+        }
+        .is-apple .save-card .wallet-badge {
+            display: inline-block;
+        }
+        .save-card .wallet-badge img {
+            height: 48px;
+            width: auto;
+        }
+        .save-card .wallet-fallback {
+            display: inline-block;
+            line-height: 1;
+            background: #000;
+            color: #fff;
+            padding: 14px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        .save-card .vcard-link {
+            color: white;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body>
@@ -155,6 +187,13 @@
             <div class="links">
                 <a href="https://twitter.com/alligator_tama" target="_blank">Twitter</a>
                 <a href="https://www.linkedin.com/in/信悟-玉城-656a1350/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="save-card">
+                <a class="wallet-badge" href="card.pkpass" type="application/vnd.apple.pkpass">
+                    <img src="assets/add-to-apple-wallet.svg" alt="Add to Apple Wallet"
+                         onerror="this.replaceWith(Object.assign(document.createElement('span'), {className: 'wallet-fallback', textContent: 'Add to Apple Wallet'}))">
+                </a>
+                <a class="vcard-link" href="contact.vcf" download="Shingo Tamaki.vcf">Save contact (.vcf)</a>
             </div>
         </div>
     </section>
@@ -229,5 +268,12 @@
             </div>
         </div>
     </section>
+    <script>
+        // Wallet passes open in Safari on iPhone, iPad and Mac; other platforms get the vCard only.
+        // Tapping the badge shows Safari's own pass preview, where the visitor chooses Add or Cancel.
+        if (/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) && !/Android/.test(navigator.userAgent)) {
+            document.documentElement.classList.add('is-apple');
+        }
+    </script>
 </body>
 </html>
